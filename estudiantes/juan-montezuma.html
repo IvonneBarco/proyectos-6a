@@ -6,125 +6,70 @@
   <title>Perfil - Juan José Montezuma Rosero</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <style>
-    body {
-      background: linear-gradient(135deg, #0f1419 0%, #1a1a2e 100%);
-      background-attachment: fixed;
-      min-height: 100vh;
-    }
-
-    .navbar {
-      background-color: #0f1419;
-      border-bottom: 2px solid #1565c0;
-    }
-
-    .navbar-brand {
-      color: #1565c0 !important;
-    }
-
-    .card {
-      background-color: #1a1a2e;
-      border: 1px solid #1565c0;
-      color: #e8eaf6;
-    }
-
-    .card-text {
-      color: #b0bec5 !important;
-    }
-
-    h1, h2 {
-      color: #90caf9 !important;
-    }
-
-    .text-primary {
-      color: #1565c0 !important;
-    }
-
-    .text-secondary {
-      color: #b0bec5 !important;
-    }
-
-    .text-muted {
-      color: #7986cb !important;
-    }
-
-    .btn-outline-dark {
-      color: #1565c0;
-      border-color: #1565c0;
-    }
-
-    .btn-outline-dark:hover {
-      background-color: #1565c0;
-      border-color: #1565c0;
-    }
-
-    .btn-outline-primary {
-      color: #1565c0;
-      border-color: #1565c0;
-    }
-
-    .btn-outline-primary:hover {
-      background-color: #1565c0;
-      border-color: #1565c0;
-    }
-
-    .btn-secondary {
-      background-color: #1565c0;
-      border-color: #1565c0;
-    }
-
-    .btn-secondary:hover {
-      background-color: #0d47a1;
-      border-color: #0d47a1;
-    }
-
-    hr {
-      border-color: #1565c0;
-    }
-
-    .img-thumbnail {
-      border-color: #1565c0 !important;
-      background-color: rgba(21, 101, 192, 0.1);
-    }
-  </style>
 </head>
-<body class="bg-light">
+<body class="bg-dark">
 
-  <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-primary">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">PROYECTOS ESTUDIANTES</a>
+      <a class="navbar-brand text-primary" href="../index.html">PORTAFOLIO</a>
     </div>
   </nav>
 
   <main class="container my-5">
     <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
+      <div class="col-md-10 col-lg-8">
         
-        <div class="card shadow-sm text-center p-4">
-          <h2 class="h4 text-uppercase text-muted mb-4">Perfil Estudiante</h2>
+        <div class="card bg-dark border border-primary shadow-lg text-center p-4 mb-4">
+          <h2 class="h4 text-uppercase text-primary mb-4">Perfil Estudiante</h2>
           
           <div class="d-flex justify-content-center mb-3">
             <img 
               src="https://github.com/JuanMR2006.png" 
               alt="Foto de Juan José Montezuma Rosero" 
-              class="rounded-circle img-thumbnail" 
+              class="rounded-circle border border-primary border-3" 
               style="width: 160px; height: 160px; object-fit: cover;"
             >
           </div>
 
-          <h1 class="h3 fw-bold mb-1">Juan José Montezuma Rosero</h1>
+          <h1 class="h3 fw-bold mb-1 text-info">Juan José Montezuma Rosero</h1>
           <p class="text-primary fw-medium mb-3">Estudiante de Ingeniería de Software</p>
           
-          <hr class="my-3">
+          <hr class="border-primary">
 
-          <p class="card-text text-secondary mb-4">
+          <p class="text-light mb-4">
             Desarrollador Full Stack en proceso, apasionado por las bases de datos.
           </p>
 
           <div class="mb-4">
-            <h3 class="h6 text-uppercase text-muted mb-3">Redes Sociales</h3>
+            <h5 class="text-primary mb-3">Habilidades</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <span class="badge bg-primary">Backend</span>
+              <span class="badge bg-info">Bases de Datos</span>
+              <span class="badge bg-primary">Python</span>
+              <span class="badge bg-info">Django</span>
+              <span class="badge bg-primary">JavaScript</span>
+              <span class="badge bg-info">React</span>
+            </div>
+          </div>
+
+          <hr class="border-primary">
+
+          <div class="mb-4">
+            <h5 class="text-primary mb-3">Tecnologías</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-dark text-light border-primary">Python - Django - DRF</li>
+              <li class="list-group-item bg-dark text-light border-primary">PostgreSQL - MySQL</li>
+              <li class="list-group-item bg-dark text-light border-primary">JavaScript - React - Bootstrap</li>
+              <li class="list-group-item bg-dark text-light border-primary">Git - GitHub</li>
+            </ul>
+          </div>
+
+          <hr class="border-primary">
+
+          <div class="mb-4">
+            <h3 class="h6 text-uppercase text-primary mb-3">Redes Sociales</h3>
             <div class="d-flex justify-content-center gap-2">
-              <a href="https://github.com/JuanMR2006" target="_blank" class="btn btn-outline-dark">
+              <a href="https://github.com/JuanMR2006" target="_blank" class="btn btn-outline-primary">
                 <i class="bi bi-github"></i> GitHub
               </a>
               <a href="https://www.linkedin.com/in/juan-montezuma20060405/" target="_blank" class="btn btn-outline-primary">
@@ -133,10 +78,68 @@
             </div>
           </div>
 
-          <div class="pt-3 border-top">
-            <a href="../estudiantes.html" class="btn btn-secondary">Regresar</a>
+          <div class="pt-3 border-top border-primary">
+            <a href="../estudiantes.html" class="btn btn-primary">Regresar</a>
           </div>
 
+        </div>
+
+        <div class="mb-4">
+          <h3 class="text-primary text-center mb-4">Proyectos Destacados</h3>
+          
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card bg-dark border border-primary h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-info">Gestión de Calificaciones</h5>
+                  <p class="card-text text-light">Sistema Django para gestionar calificaciones estudiantiles con base de datos optimizada.</p>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <span class="badge bg-primary">Django</span>
+                    <span class="badge bg-info">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card bg-dark border border-primary h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-info">Gestión de Libros</h5>
+                  <p class="card-text text-light">Aplicación de registro y catalogación de libros con interfaz intuitiva.</p>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <span class="badge bg-primary">Python</span>
+                    <span class="badge bg-info">MySQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card bg-dark border border-primary h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-info">Monitoreo GameMemoria</h5>
+                  <p class="card-text text-light">Dashboard de monitoreo con React y Three.js para visualización en tiempo real.</p>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <span class="badge bg-primary">React</span>
+                    <span class="badge bg-info">Three.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card bg-dark border border-primary h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-info">Portfolio Next.js</h5>
+                  <p class="card-text text-light">Sitio web personal construido con Next.js y Bootstrap.</p>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <span class="badge bg-primary">Next.js</span>
+                    <span class="badge bg-info">Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
