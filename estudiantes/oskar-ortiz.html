@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perfil de Oskar Ortiz</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<style>
+		:root {
+			--ink: #14213d;
+			--accent: #fca311;
+			--soft: #f8f9fa;
+		}
+
+		body {
+			background: linear-gradient(135deg, #eef2f3 0%, #ffffff 55%, #fff4dc 100%);
+			color: var(--ink);
+		}
+
+		.profile-card {
+			border: 0;
+			border-radius: 1rem;
+			overflow: hidden;
+		}
+
+		.profile-header {
+			background: var(--ink);
+			min-height: 12rem;
+			position: relative;
+		}
+
+		.profile-header::after {
+			background: var(--accent);
+			content: "";
+			height: 0.5rem;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.profile-photo {
+			border: 0.35rem solid #fff;
+			height: 10rem;
+			object-fit: cover;
+			width: 10rem;
+		}
+
+		.tech-item {
+			background: #fff;
+			border: 1px solid #e6e8eb;
+			border-radius: 0.75rem;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+
+		.tech-item:hover {
+			box-shadow: 0 0.5rem 1rem rgba(20, 33, 61, 0.1);
+			transform: translateY(-0.2rem);
+		}
+
+		.tech-item.featured {
+			background: var(--ink);
+			border-color: var(--ink);
+			color: #fff;
+		}
+
+		.tech-item.featured .tech-icon,
+		.tech-item.featured small {
+			color: var(--accent) !important;
+		}
+
+		.tech-icon {
+			color: var(--accent);
+			font-size: 1.5rem;
+		}
+
+		.stack-panel {
+			background: #f1f3f5;
+			border-radius: 1rem;
+		}
+
+		.stack-badge {
+			background: var(--ink);
+			border-radius: 999px;
+			color: #fff;
+			display: inline-flex;
+			font-size: 0.9rem;
+			font-weight: 600;
+			gap: 0.45rem;
+			padding: 0.55rem 0.85rem;
+		}
+
+		.repo-link {
+			color: var(--ink);
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		.repo-link:hover {
+			color: #b56c00;
+		}
+
+		.stack-label {
+			color: #b56c00;
+			font-size: 0.72rem;
+			font-weight: 800;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-dark" style="background-color: var(--ink);">
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="#inicio"><i class="bi bi-code-slash me-2"></i>Oskar Ortiz</a>
+			<a class="btn btn-outline-light btn-sm" href="../estudiantes.html">
+				<i class="bi bi-arrow-left me-1"></i>Regresar
+			</a>
+		</div>
+	</nav>
+
+	<main id="inicio" class="container py-5">
+		<article class="profile-card card shadow-lg mx-auto" style="max-width: 920px;">
+			<div class="profile-header"></div>
+			<div class="card-body p-4 p-md-5">
+				<div class="d-flex flex-column flex-md-row align-items-center align-items-md-end gap-4">
+					<img src="https://github.com/oskar-ortiz.png" class="profile-photo rounded-circle shadow"
+						alt="Foto de perfil de Oskar Ortiz">
+					<div class="text-center text-md-start flex-grow-1">
+						<span class="badge rounded-pill text-bg-warning mb-2">Estudiante de Ingeniería de Software</span>
+						<h1 class="display-6 fw-bold mb-2">Oskar Ortiz</h1>
+						<p class="lead text-secondary mb-0">Desarrollador web enfocado en experiencias modernas y soluciones backend.</p>
+					</div>
+				</div>
+
+				<hr class="my-4">
+
+				<div class="row g-4">
+					<div class="col-lg-7">
+						<h2 class="h4 fw-bold">Sobre mí</h2>
+						<p class="text-secondary">Construyo aplicaciones web combinando interfaces claras, componentes reutilizables y servicios backend funcionales. Me interesa crear productos útiles, aprender nuevas herramientas y convertir ideas en soluciones digitales.</p>
+						<a class="btn btn-dark" href="https://github.com/oskar-ortiz" target="_blank" rel="noopener noreferrer">
+							<i class="bi bi-github me-2"></i>Visitar mi GitHub
+						</a>
+					</div>
+					<div class="col-12">
+						<div class="stack-panel p-4 p-md-5 h-100">
+							<div class="d-flex align-items-center gap-2 mb-3">
+								<i class="bi bi-layers-fill text-warning fs-4"></i>
+								<div><span class="stack-label">Stack principal</span><h2 class="h4 fw-bold mb-0">Tecnologías que dan peso a mi perfil</h2><small class="text-secondary">Aplicadas en proyectos web, backend y cloud</small></div>
+							</div>
+							<div class="row g-3">
+								<div class="col-sm-6 col-lg-3"><div class="tech-item featured p-3 p-md-4 h-100"><i class="bi bi-filetype-tsx tech-icon"></i><div class="fw-semibold mt-2">TypeScript</div><small class="text-secondary">Frontend escalable</small></div></div>
+								<div class="col-sm-6 col-lg-3"><div class="tech-item featured p-3 p-md-4 h-100"><i class="bi bi-boxes tech-icon"></i><div class="fw-semibold mt-2">React</div><small class="text-secondary">Productos web</small></div></div>
+								<div class="col-sm-6 col-lg-3"><div class="tech-item p-3 p-md-4 h-100"><i class="bi bi-code-square tech-icon"></i><div class="fw-semibold mt-2">Angular</div><small class="text-secondary">Aplicaciones web</small></div></div>
+								<div class="col-sm-6 col-lg-3"><div class="tech-item p-3 p-md-4 h-100"><i class="bi bi-cloud-check tech-icon"></i><div class="fw-semibold mt-2">AWS</div><small class="text-secondary">Cloud y despliegue</small></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="border-top mt-5 pt-4">
+					<div class="d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-3">
+						<h2 class="h5 fw-bold mb-0">Herramientas complementarias</h2>
+						<span class="small text-secondary">Backend, testing y fundamentos</span>
+					</div>
+					<div class="d-flex flex-wrap gap-2 mb-4">
+						<span class="stack-badge"><i class="bi bi-cup-hot"></i>Java</span>
+						<span class="stack-badge"><i class="bi bi-filetype-py"></i>Python</span>
+						<span class="stack-badge"><i class="bi bi-filetype-cs"></i>C#</span>
+						<span class="stack-badge"><i class="bi bi-terminal"></i>Django</span>
+						<span class="stack-badge"><i class="bi bi-wind"></i>Tailwind CSS</span>
+						<span class="stack-badge"><i class="bi bi-check2-circle"></i>Jest</span>
+						<span class="stack-badge"><i class="bi bi-browser-chrome"></i>Selenium</span>
+						<span class="stack-badge"><i class="bi bi-git"></i>Git / GitHub</span>
+					</div>
+					<div class="row g-3 small">
+						<div class="col-md-4"><a class="repo-link" href="https://github.com/oskar-ortiz/kicklite-frontend" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrow-up-right-square me-1"></i>KickLite frontend</a></div>
+						<div class="col-md-4"><a class="repo-link" href="https://github.com/oskar-ortiz/proyecto-django" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrow-up-right-square me-1"></i>Proyecto Django</a></div>
+						<div class="col-md-4"><a class="repo-link" href="https://github.com/oskar-ortiz/book-angular" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrow-up-right-square me-1"></i>Book Angular</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer bg-white border-0 px-4 px-md-5 pb-4 text-secondary small">
+				<i class="bi bi-stars me-2"></i>Proyectos destacados: KickLite, Music Player y Delivery de comida.
+			</div>
+		</article>
+	</main>
+
+	<footer class="text-center text-secondary py-4 small">
+		&copy; 2026 Oskar Ortiz
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
