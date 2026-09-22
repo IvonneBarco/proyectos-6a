@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutrit | Plataforma Nutricional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9f0;
+        }
+
+        .hero {
+            height: 500px;
+            background-image:
+                linear-gradient(rgba(27, 67, 50, 0.75), rgba(27, 67, 50, 0.75)),
+                url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1170&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #b7e4c7;
+        }
+
+        .card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #1b4332;
+        }
+
+        footer {
+            background-color: #1b4332;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR CON STICKY-TOP: baja con el cursor -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2d6a4f;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">Nutrit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nutrit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div>
+            <span class="badge bg-success mb-3 fs-6">Salud & Fitness</span>
+            <h1>Nutrit</h1>
+            <p>Cuida tu alimentación, transforma tu vida</p>
+            <a href="#caracteristicas" class="btn btn-light btn-lg mt-2">Conoce más</a>
+        </div>
+    </section>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="container py-5">
+        <div class="text-center">
+            <h2 class="section-title">Una plataforma pensada para ti</h2>
+            <p class="lead mt-3">
+                Nutrit es una plataforma nutricional que te acompaña en el proceso de entender
+                y mejorar tus hábitos alimenticios. Registra lo que comes, conoce tus nutrientes
+                y avanza hacia tus metas de bienestar de forma sencilla y visual.
+            </p>
+        </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section id="caracteristicas" class="container pb-5">
+        <h2 class="text-center section-title mb-4">¿Qué ofrece Nutrit?</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1000&auto=format&fit=crop"
+                        class="card-img-top" alt="Registro de comidas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Registro de comidas</h5>
+                        <p class="card-text">
+                            Lleva un control diario de todo lo que comes de forma rápida
+                            y sin complicaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1000&auto=format&fit=crop"
+                        class="card-img-top" alt="Nutrientes">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Análisis nutricional</h5>
+                        <p class="card-text">
+                            Visualiza en detalle tus macronutrientes y descubre
+                            cómo cada alimento impacta tu salud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop"
+                        class="card-img-top" alt="Metas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Metas personales</h5>
+                        <p class="card-text">
+                            Define tus objetivos de salud y recibe seguimiento
+                            personalizado para alcanzarlos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOBRE NUTRIT -->
+    <section id="sobre" class="bg-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1000&auto=format&fit=crop"
+                        class="img-fluid rounded shadow" alt="Alimentación saludable">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h2 class="section-title">Come mejor, vive mejor</h2>
+                    <p>
+                        Nutrit nació de la idea de que comer bien no debería ser complicado.
+                        Muchas personas quieren mejorar su alimentación pero no saben por dónde
+                        empezar o no tienen una herramienta que los guíe de forma simple y clara.
+                    </p>
+                    <p>
+                        Con Nutrit puedes registrar tus comidas, ver qué nutrientes estás
+                        consumiendo y tomar mejores decisiones cada día, sin necesidad de ser
+                        un experto en nutrición.
+                    </p>
+                    <a href="#equipo" class="btn btn-success">Conoce el equipo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="container py-5">
+        <h2 class="text-center section-title mb-4">Integrantes del equipo</h2>
+        <div class="row justify-content-center g-4">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <img src="../assets/images/foto_CamiloToro.jpeg"
+                        class="rounded-circle mx-auto my-3"
+                        alt="Camilo Toro"
+                        style="width: 120px; height: 120px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Camilo Alejandro Toro</h5>
+                            <p class="card-text text-muted small">Desarrollador</p>
+                        </div>
+                        <a href="../estudiantes/camilo-toro.html" class="btn btn-outline-success btn-sm mt-3">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <img src="../assets/images/foto_MariaMontilla.jpg"
+                        class="rounded-circle mx-auto my-3"
+                        alt="María Montilla"
+                        style="width: 120px; height: 120px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">María Alejandra Montilla Díaz</h5>
+                            <p class="card-text text-muted small">Desarrolladora</p>
+                        </div>
+                        <a href="../estudiantes/Perfil-Alejandra-Montilla.html" class="btn btn-outline-success btn-sm mt-3">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <img src="../assets/images/foto_AndresMiranda.jpg"
+                        class="rounded-circle mx-auto my-3"
+                        alt="Andrés Miranda"
+                        style="width: 120px; height: 120px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Andrés Camilo Miranda</h5>
+                            <p class="card-text text-muted small">Desarrollador</p>
+                        </div>
+                        <a href="../estudiantes/andres-miranda.html" class="btn btn-outline-success btn-sm mt-3">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-2">
+            <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                <a href="../proyectos.html" class="btn btn-outline-success btn-lg">Regresar</a>
+                <a href="https://github.com/IvonneBarco/proyectos-6a/blob/develop/proyectos/nutrit.html" target="_blank" class="btn btn-dark btn-lg">Ver en GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4 mt-3">
+        <p class="mb-0">
+            Nutrit — Salud, hábitos y bienestar · Camilo Toro, María Montilla, Andrés Miranda
+        </p>
+    </footer>
+
+</body>
+
+</html>
