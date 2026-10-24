@@ -4,12 +4,79 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clickeable | Presentación del Proyecto</title>
+    <title>Clickeable | Educación digital y seguridad web</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --click-green: #1d9f68;
+            --click-dark: #14231f;
+            --click-mint: #eef8f2;
+        }
+
+        body {
+            background: #f7faf8;
+            color: var(--click-dark);
+        }
+
+        .click-hero {
+            background: linear-gradient(135deg, #e8f6ee 0%, #f9fcfa 58%, #d5efe2 100%);
+            border-radius: 28px;
+            overflow: hidden;
+        }
+
+        .click-kicker {
+            color: var(--click-green);
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+
+        .click-title {
+            font-size: clamp(2.8rem, 7vw, 5.8rem);
+            letter-spacing: -.07em;
+            line-height: .95;
+        }
+
+        .click-title span,
+        .click-link {
+            color: var(--click-green);
+        }
+
+        .click-showcase {
+            transform: rotate(2deg);
+            transition: transform .25s ease;
+        }
+
+        .click-showcase:hover {
+            transform: rotate(0) scale(1.02);
+        }
+
+        .click-card {
+            border: 1px solid #dce9e1;
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(20, 35, 31, .07);
+        }
+
+        .click-card h2,
+        .click-card h3 {
+            letter-spacing: -.03em;
+        }
+
+        .click-quote {
+            background: var(--click-dark);
+            color: white;
+            border-radius: 22px;
+        }
+
+        .click-quote strong {
+            color: #78dfaa;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,53 +100,91 @@
         </div>
     </nav>
 
-    <div class="container my-5">
-        <!-- Encabezado del proyecto -->
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-7">
-                <h1 class="display-4 fw-bold mb-3">Clickeable</h1>
-                <p class="lead text-muted">Un videojuego educativo desarrollado en Flutter diseñado para enseñar a las
-                    personas a identificar publicidad engañosa, enlaces maliciosos y ataques de phishing en internet.
-                </p>
+    <main class="container my-5">
+        <section class="click-hero p-4 p-lg-5 mb-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <p class="click-kicker mb-3">Educación digital · Seguridad web</p>
+                    <h1 class="click-title fw-bold mb-4">No debes darle <span>click</span> a todo.</h1>
+                    <p class="lead text-secondary mb-4">Clickeable evolucionó de una idea de videojuego en Flutter a
+                        una experiencia web educativa desarrollada en Angular para aprender a reconocer phishing,
+                        malware, anuncios engañosos y enlaces sospechosos.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#equipo" class="btn btn-success btn-lg px-4">Conocer el equipo <span aria-hidden="true">→</span></a>
+                        <a href="https://github.com/davidluna301/Clickable" target="_blank" rel="noopener"
+                            class="btn btn-outline-dark btn-lg px-4">Ver código Angular</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://deep-teal-85539764.figma.site/" target="_blank" rel="noopener">
+                        <img src="https://api.microlink.io/?url=https%3A%2F%2Fdeep-teal-85539764.figma.site%2F&screenshot=true&meta=false&embed=screenshot.url"
+                            alt="Prototipo web de Clickeable" class="img-fluid rounded-4 shadow-lg click-showcase">
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-5 text-center">
-                <a href="https://deep-teal-85539764.figma.site/" target="_blank">
-                    <img src="https://api.microlink.io/?url=https%3A%2F%2Fdeep-teal-85539764.figma.site%2F&screenshot=true&meta=false&embed=screenshot.url"
-                        alt="Prototipo en Figma de Clickeable" class="img-fluid rounded shadow"
-                        style="max-height: 450px;">
-                </a>
+        </section>
+
+        <section class="row g-4 mb-5" aria-label="Resumen del proyecto">
+            <div class="col-lg-4">
+                <div class="click-card bg-white h-100 p-4">
+                    <p class="click-kicker">01 · Conoce el riesgo</p>
+                    <h2 class="fw-bold">El peligro puede parecer <span class="click-link">inofensivo.</span></h2>
+                    <p class="text-secondary mb-0">Una interfaz clara convierte señales de seguridad digital en
+                        decisiones fáciles de entender.</p>
+                </div>
             </div>
-        </div>
+            <div class="col-lg-4">
+                <div class="click-card bg-white h-100 p-4">
+                    <p class="click-kicker">02 · Aprende a verlo</p>
+                    <h2 class="fw-bold">Antes de hacer clic, hazte tres preguntas.</h2>
+                    <p class="text-secondary mb-0">Observa al remitente, comprueba el enlace y detecta si alguien te
+                        está presionando.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="click-card bg-white h-100 p-4">
+                    <p class="click-kicker">03 · Ponlo a prueba</p>
+                    <h2 class="fw-bold">Aprender también puede ser un juego.</h2>
+                    <p class="text-secondary mb-0">Retos cortos y retroalimentación inmediata ayudan a crear hábitos
+                        digitales más seguros.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Problema y Solución -->
-        <div class="row mb-5">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h3 class="fw-bold mb-3">Problema que resuelve</h3>
-                    <p class="text-secondary">Con el incremento de estafas digitales, muchas personas sufren pérdidas de
+        <section class="row mb-5 g-4">
+            <div class="col-md-6">
+                <div class="click-card bg-white h-100 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-3">Problema que resuelve</h2>
+                    <p class="text-secondary mb-0">Con el incremento de estafas digitales, muchas personas sufren pérdidas de
                         datos y dinero al interactuar involuntariamente con anuncios engañosos o correos falsos debido a
                         la falta de herramientas de aprendizaje intuitivas.</p>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h3 class="fw-bold mb-3">Solución interactiva</h3>
-                    <p class="text-secondary">Clickeable ofrece una experiencia gamificada con interfaz accesible, pasos
+            <div class="col-md-6">
+                <div class="click-card bg-white h-100 p-4 p-lg-5">
+                    <h2 class="fw-bold mb-3">Solución interactiva</h2>
+                    <p class="text-secondary mb-0">Clickeable ofrece una experiencia gamificada con interfaz accesible, pasos
                         simples y guías interactivas para reconocer elementos seguros en la web y tomar decisiones
                         informadas antes de hacer clic.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Sección Integrantes (Agrupados en una sola fila) -->
-        <div class="row mb-5 justify-content-center">
-            <div class="col-12">
-                <h2 class="fw-bold mb-4">Integrantes del Equipo</h2>
-            </div>
-            
+        <section class="click-quote p-4 p-lg-5 mb-5">
+            <p class="click-kicker mb-3" style="color: #78dfaa;">La idea central</p>
+            <h2 class="display-6 fw-bold mb-3">“No debes darle <strong>click</strong> a todo.”</h2>
+            <p class="lead mb-0 text-white-50">Una pausa de un segundo puede proteger tus datos. Clickeable enseña a
+                observar, pensar, comprobar y decidir antes de interactuar.</p>
+        </section>
+
+        <!-- Encabezado del proyecto original conservado como contexto del equipo -->
+        <section id="equipo" class="mb-5">
+            <h2 class="fw-bold mb-4">Integrantes del Equipo</h2>
+            <div class="row justify-content-center g-4">
             <!-- Integrante 1 -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm text-center p-3">
+                <div class="click-card bg-white h-100 text-center p-3">
                     <img src="https://github.com/BurbanoValentina.png" class="rounded-circle mx-auto my-3"
                         alt="Valentina Burbano Salazar" style="width: 120px; height: 120px; object-fit: cover;">
                     <div class="card-body d-flex flex-column justify-content-between">
@@ -94,7 +199,7 @@
 
             <!-- Integrante 2 -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm text-center p-3">
+                <div class="click-card bg-white h-100 text-center p-3">
                     <img src="https://github.com/Santiago2509.png" class="rounded-circle mx-auto my-3"
                         alt="Edwin Santiago Urbina Ruiz" style="width: 120px; height: 120px; object-fit: cover;">
                     <div class="card-body d-flex flex-column justify-content-between">
@@ -109,7 +214,7 @@
 
             <!-- Integrante 3 -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm text-center p-3">
+                <div class="click-card bg-white h-100 text-center p-3">
                     <img src="https://github.com/davidluna301.png" class="rounded-circle mx-auto my-3" 
                         alt="David Luna" style="width: 120px; height: 120px; object-fit: cover;">
                     <div class="card-body d-flex flex-column justify-content-between">
@@ -123,23 +228,12 @@
             </div>
         </div>
 
-        <!-- Enlaces del Proyecto -->
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h3 class="fw-bold mb-3">Enlaces del Proyecto</h3>
-                <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="https://deep-teal-85539764.figma.site/" target="_blank"
-                        class="btn btn-outline-primary btn-lg">Ver Prototipo en Figma</a>
-                    <a href="https://github.com/BurbanoValentina" target="_blank" class="btn btn-dark btn-lg">Ver en
-                        GitHub (URL Temporal)</a>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <div class="text-center">
             <a href="../proyectos.html" class="btn btn-secondary">Regresar</a>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
